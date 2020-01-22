@@ -276,6 +276,9 @@ GameObject:
   - component: {fileID: 196306273}
   - component: {fileID: 196306275}
   - component: {fileID: 196306276}
+  - component: {fileID: 196306279}
+  - component: {fileID: 196306278}
+  - component: {fileID: 196306277}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -296,11 +299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 63.749557, y: -91.68787}
+  scrollPos: {x: -103.01916, y: 43.277218}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8200002
+  zoom: 0.79000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -308,9 +311,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 196306268}
-  selectedCommands:
-  - {fileID: 196306275}
+  - {fileID: 196306253}
+  selectedCommands: []
   variables:
   - {fileID: 196306237}
   - {fileID: 196306236}
@@ -621,8 +623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 65.344604
-    y: 237.4113
+    x: 141.61945
+    y: 258.09842
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -813,8 +815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 546.001
-    y: 257.0037
+    x: 563.2104
+    y: 371.09003
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -865,8 +867,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 552.3523
-    y: 368.78513
+    x: 788.06647
+    y: 425.92783
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1163,7 +1165,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 623.591
     y: 68.95459
-    width: 131.09753
+    width: 131.01263
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1190,9 +1192,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 171.13226
-    y: 385.34766
-    width: 134.75607
+    x: 281.13214
+    y: 346.77646
+    width: 136.07593
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1282,8 +1284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 399.4184
-    y: 309.05136
+    x: 572.27545
+    y: 473.33667
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1372,8 +1374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 266.73813
-    y: 292.90735
+    x: 292.3326
+    y: 259.10876
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1382,8 +1384,88 @@ MonoBehaviour:
   blockName: ChoseEat
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 196306278}
+  - {fileID: 196306279}
+  - {fileID: 196306277}
   suppressAllAutoSelections: 0
+--- !u!114 &196306277
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196306232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 0
+  text: Eat fast food.
+  description: 
+  targetBlock: {fileID: 196306245}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &196306278
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196306232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  storyText: Time to eat something.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &196306279
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196306232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  text: Eat self-made food.
+  description: 
+  targetBlock: {fileID: 196306247}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!1 &217449892
 GameObject:
   m_ObjectHideFlags: 0
